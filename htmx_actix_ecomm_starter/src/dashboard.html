@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <form hx-post="update_banner" hx-swap="outerHTML">
+        <label for="banner_color">Banner Color:</label><br>
+        <input type="text" id="banner_color" name="banner_color"><br>
+        <label for="banner_title">Banner Title:</label><br>
+        <input type="text" id="banner_title" name="banner_title"><br>
+        <input type="submit" value="Update Banner">
+    </form>
+
+    <form hx-post="update_products" hx-swap="outerHTML">
+        <label for="product_image">Product Image:</label><br>
+        <input type="text" id="product_image" name="product_image"><br>
+        <label for="product_title">Product Title:</label><br>
+        <input type="text" id="product_title" name="product_title"><br>
+        <label for="product_price">Product Price:</label><br>
+        <input type="text" id="product_price" name="product_price"><br>
+        <label for="product_description">Product Description:</label><br>
+        <input type="text" id="product_description" name="product_description"><br>
+        <input type="submit" value="Update Products">
+    </form>
+</body>
+</html>

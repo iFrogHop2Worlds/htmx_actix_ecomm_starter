@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <style>
+        /* CSS here */
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Navigation Bar -->
+    </nav>
+    <header hx-get="/update_banner" hx-trigger="load">
+        <!-- Banner -->
+    </header>
+    <main>
+        <div class="product-grid" hx-get="/update_products" hx-trigger="load">
+            <!-- Product Grid: 3 rows, 4 columns -->
+        </div>
+    </main>
+    <footer>
+        <!-- Footer -->
+    </footer>
+</body>
+</html>
