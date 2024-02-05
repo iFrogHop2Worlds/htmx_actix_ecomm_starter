@@ -7,7 +7,7 @@
 <body>
     <h1>Dashboard</h1>
 
-    <form hx-post="update_banner" hx-swap="outerHTML">
+    <form hx-post="/update_banner" hx-swap="innerHTML show:top" hx-target="#banner">
         <label for="banner_color">Banner Color:</label><br>
         <input type="text" id="banner_color" name="banner_color"><br>
         <label for="banner_title">Banner Title:</label><br>
@@ -15,7 +15,7 @@
         <input type="submit" value="Update Banner">
     </form>
 
-    <form hx-post="update_products" hx-swap="outerHTML">
+    <form hx-post="/update_products" hx-swap="innerHTML show:top" hx-target="#product-grid">
         <label for="product_image">Product Image:</label><br>
         <input type="text" id="product_image" name="product_image"><br>
         <label for="product_title">Product Title:</label><br>

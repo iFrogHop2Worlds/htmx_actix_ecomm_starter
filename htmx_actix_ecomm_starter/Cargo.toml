@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.5.1"
-actix-htmx = "0.3"
+futures = "*"
 serde = { version = "1.0.188", features = ["derive"] }
+tera = "*"

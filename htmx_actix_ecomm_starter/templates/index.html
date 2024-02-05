@@ -13,14 +13,16 @@
     </nav>
     <div id="banner">
         <!-- Banner -->
+        {{ banner }}
     </div>
     <main>
         <div class="product-grid" id="product-grid">
             <!-- Product Grid: 3 rows, 4 columns -->
+            {{ products }}
         </div>
     </main>
     
-    <footer id="foot">
+    <footer id="foot" {% if not footer_class %}hidden{% endif %}>
         <!-- Footer -->
         <form hx-post="/update_banner" hx-swap="innerHTML show:top" hx-target="#banner">
             <label for="banner_color">Banner Color:</label><br>
